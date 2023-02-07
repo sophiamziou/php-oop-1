@@ -67,7 +67,7 @@ $array_movie =
             <?php
                 echo $key->language;
                 echo "<br>".$key->genre;
-                echo $key->year;
+                echo "<br>".$key->year;
             ?>
         </p>
         <span>
