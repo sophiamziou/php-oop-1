@@ -53,7 +53,7 @@ $array_movie =
 
 <body>
     <h1>LISTA FILM</h1>
-    <div>I film usciti prima del 2000 hanno lo sconto del 50%,quelli dopo il 2000 del 10%</div>
+    <div>I film usciti prima del 2000 hanno lo sconto del 50%, quelli dopo il 2000 del 10%</div>
     <div>
         <?php
             foreach ($array_movie as $key) {
@@ -67,7 +67,7 @@ $array_movie =
             <?php
                 echo $key->language;
                 echo "<br>".$key->genre;
-                echo "<br>".$key->year;
+                echo $key->year;
             ?>
         </p>
         <span>
