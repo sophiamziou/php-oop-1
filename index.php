@@ -6,7 +6,6 @@ class Movie{
     public $genre;
     public $year;
     public $discount;
-
     function __construct($_title,$_language,$_genre,$_year){
         $this->title = $_title;
         $this->language = $_language;
