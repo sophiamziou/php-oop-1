@@ -55,25 +55,25 @@ $array_movie =
     <div>I film usciti prima del 2000 hanno lo sconto del 50%, quelli dopo il 2000 del 10%</div>
     <div>
         <?php
-            foreach ($array_movie as $key) {
+            foreach ($array_movie as $key => $value) {
                 ?>
         <h2>
             <?php
-                echo $key->title;
+                echo $value->title;
             ?>
         </h2>
         <p>
             <?php
-                echo $key->language;
-                echo "<br>".$key->genre;
-                echo "<br>".$key->year;
+                echo $value->language;
+                echo "<br>".$value->genre;
+                echo "<br>".$value->year;
             ?>
         </p>
         <span>
             <?php
-                $movie_year = $key->year;
-                $key->setDiscount($movie_year);
-                echo "Sconto:". $key->getDiscount()."%";
+                $movie_year = $value->year;
+                $value->setDiscount($movie_year);
+                echo "Sconto:". $value->getDiscount()."%";
             ?>
         </span>
         <?php }?>
